@@ -1,0 +1,30 @@
+{
+  "name": "jedlik-typescript",
+  "version": "1.0.0",
+  "description": "Jedlik project",
+  "engines": {
+    "node": "11.x"
+  },
+  "main": "app.js",
+  "repository": {
+    "private": true,
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node ./js/app.js",
+    "start-debug": "node --debug=5858 ./js/app.js",
+    "install:nodemodules": "npm install",
+    "compile": "tsc",
+    "nodemon": "nodemon --inspect -q ./js/app.js",
+    "kill": "taskkill /im node.exe /F"
+  },
+  "author": "Horváth Ferenc",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.7.4",
+    "nodemon": "^1.19.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  }
+}
